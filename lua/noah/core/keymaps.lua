@@ -37,6 +37,15 @@ keymap.set("n", "<leader>tf", "<cmd>tabnew %<CR>", { desc = "Open current buffer
 -- Add breakpoint
 keymap.set("n", "<leader>db", function() require('dap').toggle_breakpoint() end, { desc = "Toggle breakpoint" })
 
+-- Step over
+keymap.set("n", "<leader>do", function() require('dap').step_over() end, { desc = "Step over" })
+
+-- Step into
+keymap.set("n", "<leader>di", function() require('dap').step_into() end, { desc = "Step into" })
+
+-- Step out
+keymap.set("n", "<leader>du", function() require('dap').step_out() end, { desc = "Step out" })
+
 -- Open debugging sidebar
 keymap.set("n", "<leader>dus", function()
   require('dap.ui.widgets').sidebar(require('dap.ui.widgets').scopes).open()
@@ -47,3 +56,4 @@ keymap.set("n", "<leader>dgt", function() require('dap-go').debug_test() end, { 
 
 -- Debug last Go test
 keymap.set("n", "<leader>dgl", function() require('dap-go').debug_last() end, { desc = "Debug last Go test" })
+
