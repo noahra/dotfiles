@@ -13,7 +13,7 @@ vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup({ { import = "noah.plugins" }, { import = "noah.plugins.lsp" } }, {
   install = {
-    colorscheme = { "tokyonight-storm" },
+    colorscheme = { "catppuccin-macchiato" },
   },
   checker = {
     enabled = true,
