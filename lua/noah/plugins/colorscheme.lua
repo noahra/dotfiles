@@ -1,12 +1,11 @@
 return {
-	"catppuccin/nvim",
+	"rose-pine/neovim",
 	config = function()
-		require("catppuccin").setup({
-			flavour = "mocha", -- Choose the Mocha flavor
+		require("rose-pine").setup({
 			transparent_background = false, -- Set to true for transparency
 		})
 
 		-- Apply the colorscheme
-		vim.cmd("colorscheme catppuccin")
+		vim.cmd("colorscheme rose-pine")
 	end,
 }
